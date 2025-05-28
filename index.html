@@ -158,10 +158,10 @@
   </style>
 </head>
 <body>
-  <img src="https://raw.githubusercontent.com/APS-GAMES/CarGame/main/assets/aps.png" id="topRightLogo" alt="Logo" />
+  <img src="https://raw.githubusercontent.com/APS-GAMES/CarGameTabless/main/assets/aps.png" id="topRightLogo" alt="Logo" />
   <div id="userForm">
     <div id="formTitle">Team Drive 2X CPS</div>
-    <img src="https://raw.githubusercontent.com/APS-GAMES/CarGame/main/assets/cps.png" id="formLogo" alt="Logo 2" />
+    <img src="https://raw.githubusercontent.com/APS-GAMES/CarGameTabless/main/assets/cps.png" id="formLogo" alt="Logo 2" />
     <input type="text" id="name" placeholder="Name" required />
     <input type="text" id="empNo" placeholder="Employee Number" required />
     <input type="text" id="dept" placeholder="Department" required />
@@ -199,20 +199,20 @@
 
   <!-- Audio -->
   <audio id="bgMusic" loop autoplay>
-    <source src="https://raw.githubusercontent.com/APS-GAMES/CarGame/main/assets/bg.mp3" type="audio/mpeg">
+    <source src="https://raw.githubusercontent.com/APS-GAMES/CarGameTabless/main/assets/bg.mp3" type="audio/mpeg">
   </audio>
   <audio id="blockSound">
-    <source src="https://raw.githubusercontent.com/APS-GAMES/CarGame/main/assets/block.mp3" type="audio/mpeg">
+    <source src="https://raw.githubusercontent.com/APS-GAMES/CarGameTabless/main/assets/block.mp3" type="audio/mpeg">
   </audio>
   <audio id="asdSound">
-    <source src="https://raw.githubusercontent.com/APS-GAMES/CarGame/main/assets/asd.mp3" type="audio/mpeg">
+    <source src="https://raw.githubusercontent.com/APS-GAMES/CarGameTabless/main/assets/asd.mp3" type="audio/mpeg">
   </audio>
 
   <script>
     const canvas = document.getElementById("gameCanvas");
     const ctx = canvas.getContext("2d");
     const lanes = [35, 135, 235];
-    const githubBase = "https://raw.githubusercontent.com/APS-GAMES/CarGame/main/assets";
+    const githubBase = "https://raw.githubusercontent.com/APS-GAMES/CarGameTabless/main/assets";
     const player = {
       lane: 1,
       y: 440,
@@ -403,7 +403,7 @@
           department: userData.department,
           score: score
         };
-        fetch("https://script.google.com/macros/s/AKfycbzy6TdBiKnOByTyRSxIaSN1cLYKWN_5lpqrw4FQNWx4GVr4NKM8f82fHFgaXZ_LAEfv/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbytA6dJrsUmyXYvrt7nkXvrAqVAD0CqNL1FxRW9Ar3N6G-KGOlFflCa_CJLa-MuHG8S/exec", {
           method: "POST",
           mode: "no-cors",
           headers: { "Content-Type": "application/json" },
