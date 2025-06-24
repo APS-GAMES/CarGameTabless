@@ -167,11 +167,11 @@
     <input type="text" id="dept" placeholder="Department" required /> -->
 
     <!-- Name Field: only letters (a-z, A-Z), max length 30 -->
-    <input type="text" id="name" placeholder="Name" required 
+<!--     <input type="text" id="name" placeholder="Name" required 
       maxlength="30" 
       pattern="[A-Za-z\s]+" 
       title="Only letters are allowed" 
-      inputmode="text" />
+      inputmode="text" /> -->
     
     <!-- Employee Number: only numbers (0-9), exactly 5 digits -->
     <input type="text" id="empNo" placeholder="Employee Number" required 
@@ -233,9 +233,9 @@
   <script>
 
     // Input validation script
-    document.getElementById("name").addEventListener("input", function () {
-      this.value = this.value.replace(/[^a-zA-Z]/g, "").slice(0, 30); // Letters only, max 30
-    });
+    // document.getElementById("name").addEventListener("input", function () {
+    //   this.value = this.value.replace(/[^a-zA-Z]/g, "").slice(0, 30); // Letters only, max 30
+    // });
 
     document.getElementById("dept").addEventListener("input", function () {
       this.value = this.value.replace(/[^a-zA-Z]/g, "").slice(0, 30); // Letters only, max 30
@@ -434,7 +434,7 @@
 
       if (userSubmitted) {
         const payload = {
-          name: userData.name,
+          // name: userData.name,
           employeeNumber: userData.employeeNumber,
           department: userData.department,
           score: score
@@ -465,15 +465,15 @@
     }
 
     function submitUserInfo() {
-      const name = document.getElementById("name").value.trim();
+      // const name = document.getElementById("name").value.trim();
       const empNo = document.getElementById("empNo").value.trim();
       const dept = document.getElementById("dept").value.trim();
 
-      if (!name || !empNo || !dept) {
+      if (!empNo || !dept) {
         alert("Please fill in all fields before playing the game.");
         return;
       }
-      userData.name = name;
+      // userData.name = name;
       userData.employeeNumber = empNo;
       userData.department = dept;
       userSubmitted = true;
